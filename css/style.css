@@ -8,8 +8,8 @@
 /* Corpo */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f0e6; /* bege claro */
-    color: #5d4037; /* marrom escuro */
+    background-color: #ffffff; /* branco */
+    color: #000000; /* preto */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
 
 /* Menu lateral */
 .menu-lateral {
-    background-color: #7b4f36; 
+    background-color: #333333; /* cinza escuro */
     width: 220px;
     padding: 20px;
     display: flex;
@@ -49,7 +49,7 @@ body {
 }
 
 .menu-lateral ul li a {
-    color: #f5f0e6;
+    color: #ffffff; /* branco */
     text-decoration: none;
     font-weight: 600;
     display: block;
@@ -60,7 +60,7 @@ body {
 
 .menu-lateral ul li a:hover,
 .menu-lateral ul li a.ativo {
-    background-color: #a67c52;
+    background-color: #666666; /* cinza médio no hover */
 }
 
 /* Conteúdo principal */
@@ -73,17 +73,20 @@ h1 {
     font-family: 'Georgia', serif;
     font-size: 2.4rem;  
     margin-bottom: 20px;
+    color: #000000; /* preto */
 }
 
 h2 {
     font-family: 'Georgia', serif;
     font-size: 1.4rem; 
     margin-bottom: 10px;
+    color: #222222; /* cinza escuro */
 }
 
-p {/* aumentado de 1.2rem */
+p {
     line-height: 1.6;
     margin-bottom: 25px;
+    color: #333333; /* cinza escuro */
 }
 
 /* Imagens principais */
@@ -91,7 +94,7 @@ p {/* aumentado de 1.2rem */
     width: 100%;
     max-width: 600px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra leve preta */
 }
 
 /* Portfólio - grid de produtos */
@@ -111,34 +114,38 @@ p {/* aumentado de 1.2rem */
 
 .produto h2 {
     margin-top: 10px;
+    color: #000000;
 }
 
 /* Botões para redes sociais */
 .botao-social {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #7b4f36; /* Marrom médio */
-    color: #f5f0e6; /* Bege claro */
+    background-color: #333333; /* cinza escuro */
+    color: #ffffff; /* branco */
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
     transition: background-color 0.3s ease;
-    margin: 5px; /* Espaço entre os botões */
+    margin: 5px;
 }
 
 .botao-social:hover {
-    background-color: #a67c52; /* Marrom mais claro no hover */
+    background-color: #666666; /* cinza médio no hover */
 }
 
 /* Rodapé */
 footer {
-    background-color: #7b4f36;
-    color: #f5f0e6;
+    background-color: #333333; /* cinza escuro */
+    color: #ffffff;
     text-align: center;
     padding: 5px 0;
-    font-size: 1rem; /* Aumentado um pouco para melhor leitura */
+    font-size: 1rem;
 }
 
+footer p {
+    color: #ffffff; /* branco */
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .container {
